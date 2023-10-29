@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+</head>
+<body>
+    <script>
+        var n = 135;
+        var i = 1;
+        var disarium = [];
+
+        while (i <= n) {
+            var s = 0;
+            var t = i.toString();
+
+            for (var j = 0; j < t.length; j++) {
+                s += Math.pow(parseInt(t.charAt(j)), j + 1);
+            }
+
+            if (s == i) {
+                disarium.push(i);
+            }
+            i++;
+        }
+
+        document.write("Disarium numbers: " + disarium);
+    </script>
+</body>
+</html>

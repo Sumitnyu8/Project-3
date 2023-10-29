@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <script>
+        var limit = 100;
+        var firstNum = 0;
+        var secondNum = 1;
+
+        document.write("Fibonacci Series up to"," ", limit," ", "is: ","<br>");
+        document.write(firstNum);
+
+        while (secondNum <= limit) {
+        document.write(secondNum);
+
+        // Calculate the next Fibonacci number
+        let nextNum = firstNum + secondNum;
+        firstNum = secondNum;
+        secondNum = nextNum;
+        }
+
+
+    </script>
+</body>
+</html>

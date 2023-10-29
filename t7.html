@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task7</title>
+</head>
+<body>
+    <script>
+        var n = 800;
+        var i = 1;
+        var mag = [];
+
+        while (i <= n) {
+            var s = 0;
+            var t = i;
+
+            while (t > 0) {
+                var d = t % 10;
+                s += d;
+                t = Math.floor(t / 10);
+            }
+
+            if (s == 1) {
+                mag.push(i);
+            }
+            i++;
+        }
+
+        document.write("Magic numbers: " + mag);
+    </script>
+</body>
+</html>
